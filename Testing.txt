@@ -1,0 +1,50 @@
+Mogliche Anforderungen/Fehlerkorrekturen/Verbesserungen:
+---------
+A Powerstream: Feature/Optimize: Powerstream Startverhalten PV Erzeugung verbessern, (z.b bei bewölktem Himmel) startet wesentlich später als andere Microwechselrichter mit gleich ausgerichteten Panel(s)
+(Panels: 2 x Risen RSM40-8-410M)
+
+A Powerstream: Feature/Optimize: erzeugt im Vergleich zu anderen Microwechselrichter mit identisch ausgerichteten Panel merklich weniger (W)
+(Panels: 2 x Risen RSM40-8-410M)
+
+B App: Feature: in der App wäre selektieren in den Graphen hilfreich um z.b. Werte/Zeiten sehen zu können
+
+B App: Feature: in der App Historie auch für PV1 und PV2 Eingang um z.b. unterschiedlich ausgerichtete Panels vergleichen zu können (W über Tag(e), Ertrag Tag, Monat, Jahr, ...)
+(inkl. Berücksichtigung folgender Anforderung, theoretische vs. abgerufen)
+
+B App: Feature: Powerstream in der App für PV1 und PV2 Eingang sollte neben den z.b. durch Einstellungen begrenzten Eingangswerten (W), auch die theoretisch erzeugbare Leistung angezeigt werden die die Eingänge ohne Beschränkung leisten würden (z.b. für Auswertungen hilfreich um einzuschätzen auf wieviel Produktion verzichtet wird)
+(auch in vorheriger Anforderung berücksichtigen)
+
+A Powerstream: Feature: (wie auch bereits hier in der Gruppe angemerkt) Powerstream AC Ausgang einstellbar nach Zeiten und Prio Akku laden/ Einspeisung, ... bei Zeitplänen
+
+A Powerstream/Delta 2 Max: Feature: API / Integration HA 😜 (da wäre vieles direkt möglich was zuvor gewünscht wird)
+
+A Powerstream/Delta 2 Max: Feature: Delta 2 Max laden von AC direkt und gleichzeitig vom Powerstream PV laden, AC laden am Delta deaktiviert Powerstream laden per PV 😥
+
+A Powerstream/Delta 2 Max: Feature: Delta 2 Max direkt mit Solarmodulen und von Powerstream Solar --> soll ja im Juli kommen
+
+B App: Feature: App Tageseinträge editierbar machen. Um z.b. fehlerhafte Einträge oder den Testeintrag/Qualitätskontrolle von vor Auslieferung korrigieren zu können
+
+B App: Bug: App, Eintrag für Delta 2 Max, es steht als Ausgang "Ecoflow Wave Portable Air..." wenn sie an Powerstream liefert - ich habe gar keine Wave oder weiss es zumindest nicht 😉
+
+B App: Bug: Powerstream, die Graphen enden täglichen 18 Uhr, auch wenn man die Tage zurück blättert (App neu aufrufen löst dies auch nicht)
++ 09.06.2023: für heute werden mir Werte nach 18 Uhr angezeigt (bisherige Aufzeichnungen enden nach wie vor um 18 Uhr, App hat kein Update erfahren, Android) --> weiter 🧐
++ 10.06.2023: heute morgen ist wieder alles um 18 Uhr abgeschnitten, auch das was gestern gut aussah
+
+Sicherheit Ecoflow Geräte: Powerstream, Delta, Plug - Bluetooth,  ohne Authentifizierung...
+
+...
+
+Sammlung Hinweise/Erfahrungen:
+---------
+- Powerstream/Delta 2 Max: wenn z.b. bei Nachteinspeisung das untere eingestellte Limit der Delta 2 Max (z.b. 10%) erreicht wurde, bevor die per geplanter Aufgabe in Powerstream eingestellte Zeit zum Umschalten auf Haus-Einspeisungs-Prio erreicht wurde, wird daraufhin zuerst die Delta wieder 5% über unterem Limit (also z.b. 15%) geladen, bevor eine Einspeisung ins Haus stattfindet (trotz entsprechender Einstellungen) - OK muss man nur wissen sonst ist man erstmal irritiert 😉
+(Workaround: wenn möglich -also untere Limit nicht bereits z.b. 0% ist- das Limit runtersetzen sodass eine Differenz von 5% vorliegt, dann kann man doch erst die aktuelle PV Erzeugung ins Haus einspeisen und später bei Überschuss erst wieder den Akku laden 😉 - Wunsch nach mehr Automation ggf API)
+
+- analog zu vorigem Beitrag, obere Limit angefahren, dann muss erst eine Entladung um 5% gegenüber eingestelltem Limit erreicht werden, sonst lädt er nicht wieder nach.
+Z.b. wenn der Akku für die Nacht voll bzw auf obere Limit gefüllt ist, aber nun noch ein Abnehmer (manuell Einstellung geändert oder Smartplug) daher kommt und Bedarf aus dem Akku zieht die den Akku nicht um 5% leert, dann bleibt leider der niedrigere Akkufüllstand für die Nacht. Schöner wäre er würde wieder Zielwert/obere Limit nachladen (Solar zum nachladen ist noch da gewesen; Workaround: wenn möglich -also obere Limit nicht bereits 100% ist- das Limit hochsetzen sodass eine Differenz von 5% vorliegt, dann lädt er nach für die Nacht 😉 - Wunsch nach mehr Automation ggf API)
+
+- Hm, beobachten 🤔: Priomodus Speicher in Verbindung mit Smartplugs. In diesem Modus machen die Plugs erst Sinn wenn der Speicher voll ist!?!?
+Ansonsten wird der Speicher gefüllt obwohl Bedarf vom Smartplug gemeldet wird - wofür habe ich dann den Smartplugs eingesteckt??!
+Ich würde erwarten der Plug hat Prio und wird von Solar plus ggf notwendigem Speicher versorgt...
+Weiter beobachten... 🤔
+
+- Smartplug Verbrauchsanzeige (z.b. 15.06.2023): vermutlich wird in der Anzeige des Smartplugs selbst die gesamt angeforderte Wh (957Wh) angezeigt, wohingegen über die Verbrauchsanzeige Powerstream die tatsächlich an Plug gelieferte (0.27kWh) angezeigt wird. (angeforderte ist z.b. höher da Plug z.b. 1500W fordert aber ja nur max. 600W eingespeist werden dürfen)

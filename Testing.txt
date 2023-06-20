@@ -34,6 +34,9 @@ Sicherheit Ecoflow Geräte: Powerstream, Delta, Plug - Bluetooth,  ohne Authenti
 
 Improvement Powerstream (Delta 2 Max): Option to only send current PV input (or maybe better the PV Input below configured AC Output) to grid because sometimes e.g. cloudy conditions to prevent very often load/unload activities from the battery to enhance battery live
 
+Improvement Powerstream (Delta 2 Max): Option to Set AC Output in relation to percentage the Powerstation is loaded.
+If it was not possibile to load the Powerstation fully to 100% at the day, it can be very helpful to dynamicly set the AC Output for the night to prevent the Powerstation to reach the lower limit or to deepload (power off) the Powerstation
+
 
 ...
 

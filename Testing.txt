@@ -32,7 +32,7 @@ B App: Bug: Powerstream, die Graphen enden täglichen 18 Uhr, auch wenn man die 
 
 Sicherheit Ecoflow Geräte: Powerstream, Delta, Plug - Bluetooth,  ohne Authentifizierung...
 
-Improvement Powerstream (Delta 2 Max): Option to only send current PV input to grid (instead of set AC output) because sometimes e.g. cloudy conditions to prevent very often load/unload activities from the battery to enhance battery live
+Improvement Powerstream (Delta 2 Max): Option to only send current PV input (or maybe better the PV Input below configured AC Output) to grid because sometimes e.g. cloudy conditions to prevent very often load/unload activities from the battery to enhance battery live
 
 
 ...

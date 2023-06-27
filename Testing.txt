@@ -26,9 +26,10 @@ B App: Feature: App Tageseinträge editierbar machen. Um z.b. fehlerhafte Eintr�
 
 B App: Bug: App, Eintrag für Delta 2 Max, es steht als Ausgang "Ecoflow Wave Portable Air..." wenn sie an Powerstream liefert - ich habe gar keine Wave oder weiss es zumindest nicht 😉
 
-B App: Bug: Powerstream, die Graphen enden täglichen 18 Uhr, auch wenn man die Tage zurück blättert (App neu aufrufen löst dies auch nicht)
+[FIXED] B App: Bug: Powerstream, die Graphen enden täglichen 18 Uhr, auch wenn man die Tage zurück blättert (App neu aufrufen löst dies auch nicht)
 + 09.06.2023: für heute werden mir Werte nach 18 Uhr angezeigt (bisherige Aufzeichnungen enden nach wie vor um 18 Uhr, App hat kein Update erfahren, Android) --> weiter 🧐
 + 10.06.2023: heute morgen ist wieder alles um 18 Uhr abgeschnitten, auch das was gestern gut aussah
++ 27.06.2023: Android Ecoflow App Version 4.7.0.39 -> OK
 
 Sicherheit Ecoflow Geräte: Powerstream, Delta, Plug - Bluetooth,  ohne Authentifizierung...
 

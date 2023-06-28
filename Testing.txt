@@ -31,6 +31,9 @@ B App: Bug: App, Eintrag für Delta 2 Max, es steht als Ausgang "Ecoflow Wave Po
 + 10.06.2023: heute morgen ist wieder alles um 18 Uhr abgeschnitten, auch das was gestern gut aussah
 + 27.06.2023: Android Ecoflow App Version 4.7.0.39 -> OK
 
+Powerstream: Settings für Microwechselrichter auch in dessen Menü verfügbar machen, nicht nur über die Geräteübersicht/-auswahl
++ 27.06.2023: mit Android Ecoflow App Version 4.7.0.39 -> OK 
+
 Sicherheit Ecoflow Geräte: Powerstream, Delta, Plug - Bluetooth,  ohne Authentifizierung...
 
 Improvement Powerstream (Delta 2 Max): Option to only send current PV input (or maybe better the PV Input below configured AC Output) to grid because sometimes e.g. cloudy conditions to prevent very often load/unload activities from the battery to enhance battery live

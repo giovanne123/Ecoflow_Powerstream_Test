@@ -2,7 +2,11 @@ Mogliche Anforderungen/Fehlerkorrekturen/Verbesserungen:
 ---------
 A Powerstream: Feature/Optimize: Powerstream Startverhalten PV Erzeugung verbessern, (z.b bei bewölktem Himmel) startet wesentlich später als andere Microwechselrichter mit gleich ausgerichteten Panel(s)
 (Panels: 2 x Risen RSM40-8-410M)
-+ 29.06.2023: FW 1.0.0.135 erfolgreich installiert, Ergebnis bisher von ca. 20W auf 75W mit 2x410W (1xOst, 1xSüd - Risen Module, Wolkendecke 9:20 Uhr, kommt den anderen verfügbaren BKW näher... aber wohl noch nicht an z.b. Bosswerk Mi 600 mit  Maysun 2x410 W ran aktuell 9:50 Uhr 150W vs 100W Powerstream... mal morgen früh beobachten...)
++ 29.06.2023: FW 1.0.0.135 erfolgreich installiert, Erfolgreich installiert, Ergebnis bisher von ca. 20W auf 75W mit 2x410W (1xOst, 1xSüd - Risen Module, Wolkendecke 9:20 Uhr, kommt den anderen verfügbaren BKW näher... aber wohl noch nicht an z.b. Bosswerk Mi 600 mit  Maysun 2x410 W ran aktuell 
+9:50 Uhr 150W Bosswerk vs 100W Powerstream
+12:00 Uhr 230W Bosswerk vs 180W Powerstream
+ ...
+---> ggf ca. 50W Eigenverbrauch (Powerstream) bei angeschlossenem Akku (Delta 2 Max) !?
 
 A Powerstream: Feature/Optimize: erzeugt im Vergleich zu anderen Microwechselrichter mit identisch ausgerichteten Panel merklich weniger (W)
 (Panels: 2 x Risen RSM40-8-410M)

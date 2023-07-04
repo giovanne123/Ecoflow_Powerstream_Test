@@ -7,6 +7,7 @@ A Powerstream: Feature/Optimize: Powerstream Startverhalten PV Erzeugung verbess
 12:00 Uhr 230W Bosswerk vs 180W Powerstream
 13:30 Uhr 190W Bosswerk vs 130W Powerstream 
  ...
+04.07.2023: 7:00 bewölktem Himmel -> Powerstream startet erst jetzt langsam, Deye/Nep sind bereits seit 5:30 am produzieren was der Powerstream erst jetzt schafft. Differenz nach wie vor ca. 50W, macht den Eindruck als wenn der Powerstream erst mal alles selbst benötigt!?
 ---> ggf ca. 50W Eigenverbrauch (Powerstream) bei angeschlossenem Akku (Delta 2 Max) !?
 
 A Powerstream: Feature/Optimize: erzeugt im Vergleich zu anderen Microwechselrichter mit identisch ausgerichteten Panel merklich weniger (W)
